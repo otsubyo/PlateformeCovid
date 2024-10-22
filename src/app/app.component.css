@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f0ff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #8a2be2;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.symptoms {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.symptoms h2 {
+  font-size: 2rem;
+  color: #8a2be2;
+  margin-bottom: 1rem;
+}
+
+.symptoms > p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.symptom-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.symptom-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.symptom-card img {
+  max-width: 80px;
+  margin-bottom: 1rem;
+}
+
+.symptom-card h3 {
+  color: #8a2be2;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .symptom-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: white;
+  color: #333;
+}
